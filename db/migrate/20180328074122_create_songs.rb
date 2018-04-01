@@ -3,7 +3,7 @@ class CreateSongs < ActiveRecord::Migration
     create_table :songs do |t|
       t.string :name
       t.string :album
-      t.string :tags
+      t.text :tags, array:true, default: []
       t.string :release_date
       t.string :artist
       t.string :description
