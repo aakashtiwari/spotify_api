@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -26,6 +26,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'rack-cors', :require => 'rack/cors'
 
 gem 'pg', '~> 0.21'
+
+gem 'bcrypt', '~> 3.1.7'
+
+gem 'jwt'
+
+gem 'simple_command'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
