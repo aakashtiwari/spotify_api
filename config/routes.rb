@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
     post 'authenticate', to: 'authentication#authenticate'
+
+    resources :users
     resources :songs
 
   # Example resource route with options:
