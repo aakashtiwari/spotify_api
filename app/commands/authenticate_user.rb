@@ -8,6 +8,9 @@ class AuthenticateUser
 
 	def call
 		token = JsonWebToken.encode(user_id: user.id) if user
+		user_data = User.where(username: username).select(:id, :username, :first_name, :last_name)[0] if user
+		body = {  user: user_data,
+							token: token } if user
 	end
 
 	private 
